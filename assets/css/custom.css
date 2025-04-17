@@ -1,0 +1,373 @@
+/* assets/css/custom.css */
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Utility Classes */
+.text-gray-800 {
+    color: #344767 !important;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #0d6efd 0%, #0654c4 100%);
+    padding: 0.75rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+    padding: 0.5rem 0;
+    background: linear-gradient(90deg, #0b5ed7 0%, #0543a9 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 0 2px;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.075) !important;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e3e6f0;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Border Colored Cards */
+.border-left-primary {
+    border-left: 5px solid #0d6efd !important;
+}
+
+.border-left-success {
+    border-left: 5px solid #198754 !important;
+}
+
+.border-left-info {
+    border-left: 5px solid #0dcaf0 !important;
+}
+
+.border-left-warning {
+    border-left: 5px solid #ffc107 !important;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    box-shadow: 0 2px 4px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(13, 110, 253, 0.4);
+}
+
+/* Table Styles */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fc;
+}
+
+/* DataTables Styling */
+.dataTables_wrapper {
+    margin-top: 1rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* Calendar Styles */
+#calendar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.075);
+}
+.fc {
+    /* Adjust font family for consistency */
+    font-family: 'Poppins', sans-serif;
+}
+
+.fc-event {
+    background-color: #0d6efd;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.fc-toolbar-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Calendar Tooltip */
+.tooltip-calendar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tooltip-inner {
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Fix z-index issues */
+.fc-popover {
+    z-index: 1060 !important;
+}
+
+.tooltip {
+    z-index: 1070 !important;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 70px;
+    padding: 2rem 1rem;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e3e6f0;
+    padding: 1.25rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #e3e6f0;
+    padding: 1.25rem;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+
+/* Loading Spinner */
+.spinner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.fc-event {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    margin: 1px 0;
+}
+
+.fc-event-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 2px 4px;
+}
+
+.fc-event-time {
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+.fc-toolbar-title {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+}
+
+.fc-day-today {
+    background-color: rgba(30, 144, 255, 0.1) !important;
+}
+
+/* Tooltip customization */
+.fc-tooltip .tooltip-inner {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.fc-event-details p {
+    margin-bottom: 0.5rem;
+}
+
+/* Custom view buttons */
+#calendar-view-options .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* Legend styles */
+.legend {
+    margin-top: 6px;
+}
+.legend .badge {
+    padding: 6px 10px;
+    font-weight: normal;
+}
+
+/* Saturday styling */
+.fc-day-sat {
+    background-color: rgba(230, 230, 230, 0.3); /* Light grey background for Saturday */
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+    
+    .main-content {
+        margin-top: 60px;
+        padding: 1rem 0.5rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
